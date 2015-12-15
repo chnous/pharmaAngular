@@ -9,7 +9,7 @@ using System.Web.Http;
 [assembly: OwinStartup(typeof(PharmaAngular.API.Startup))]
 namespace PharmaAngular.API
 {
-    public class Startup
+    public partial class Startup
     {
         public void Configuration(IAppBuilder app)
         {
