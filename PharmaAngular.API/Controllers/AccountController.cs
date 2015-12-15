@@ -11,6 +11,7 @@ using System.Web.Http;
 
 namespace PharmaAngular.API.Controllers
 {
+    [RoutePrefix("api/Account")]
     public class AccountController : ApiController
     {
         private ApplicationUserManager _userManager;
