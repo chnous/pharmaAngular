@@ -1,0 +1,6 @@
+﻿<div ng-hide="error == ''" class="alert alert-danger">
+    {{error}}
+</div>
+<div class="row">
+    <div class="col-md-3" ng-repeat="product in products">{{product.productId}} - {{product.name}}</div>
+</div>

@@ -96,7 +96,12 @@
   <ItemGroup>
     <Content Include="app\controllers\indexController.js" />
     <Content Include="app\controllers\homeController.js" />
+    <Content Include="app\controllers\loginController.js" />
+    <Content Include="app\controllers\productsController.js" />
+    <Content Include="app\services\productsService.js" />
     <Content Include="app\views\home.html" />
+    <Content Include="app\views\login.html" />
+    <Content Include="app\views\products.html" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
