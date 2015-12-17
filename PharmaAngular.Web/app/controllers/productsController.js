@@ -1,5 +1,5 @@
 ﻿'use strict';
-app.controller('productsController', ['$scope', '$http', 'productsService', function ($scope, $http, productsService) {
+app.controller('productsController', ['$scope', 'productsService', function ($scope, productsService) {
 
     $scope.working = true;
     $scope.error = "";

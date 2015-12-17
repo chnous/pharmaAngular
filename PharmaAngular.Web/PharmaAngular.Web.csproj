@@ -98,6 +98,7 @@
     <Content Include="app\controllers\homeController.js" />
     <Content Include="app\controllers\loginController.js" />
     <Content Include="app\controllers\productsController.js" />
+    <Content Include="app\services\authInterceptorService.js" />
     <Content Include="app\services\productsService.js" />
     <Content Include="app\views\home.html" />
     <Content Include="app\views\login.html" />

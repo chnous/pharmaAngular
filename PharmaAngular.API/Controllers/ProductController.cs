@@ -10,7 +10,7 @@ namespace PharmaAngular.API.Controllers
     [RoutePrefix("api/Products")]
     public class ProductController : ApiController
     {
-        //[Authorize]
+        [Authorize]
         [Route("")]
         public  IHttpActionResult Get()
         {
