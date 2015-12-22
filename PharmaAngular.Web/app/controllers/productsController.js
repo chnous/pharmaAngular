@@ -1,17 +1,12 @@
 ﻿'use strict';
-app.controller('productsController', ['$scope', 'productsService', function ($scope, productsService) {
+app.controller('productsController', ['$scope', 'Product', function ($scope, Product) {
 
     $scope.working = true;
     $scope.error = "";
 
-    productsService.getProducts().then(
-        function (result) {
-            $scope.working = false;
-            $scope.products = result.data;
-        },
-        function (result) {
-            $scope.error = result.data.message;
-        })
-
-    
+    $scope.products = Product.query(function () {
+        $scope.working = false;
+    }, function (error) {
+        $scope.error = error;
+    });    
 }]);

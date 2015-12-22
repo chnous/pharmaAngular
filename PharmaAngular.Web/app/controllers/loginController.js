@@ -14,7 +14,7 @@ app.controller('loginController', ['$scope', '$location', 'authService', functio
             $location.path("/products");
         },
          function (err) {
-             $scope.message = err.err_description;
+             $scope.message = err.error_description;
          });
     };
 

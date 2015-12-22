@@ -1,15 +1,7 @@
 ﻿'use strict';
-app.factory('productsService', ['$http', function ($http) {
-    var serviceBase = 'http://localhost:59459/';
-    var productsServiceFactory = {};
+app.factory('Product', ['$resource', function ($resource) {
 
-    var _getProducts = function () {
-        return $http.get(serviceBase + 'api/products').then(function (results) {
-            return results;
-        });
-    };
-
-    productsServiceFactory.getProducts = _getProducts;
-
-    return productsServiceFactory;
+    return $resource('http://localhost:59459/api/products/:productId', { productId: '@productId' },{
+        update: {method:'PUT'}
+    });
 }]);

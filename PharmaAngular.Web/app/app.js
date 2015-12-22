@@ -1,4 +1,4 @@
-﻿var app = angular.module('AngularAuthApp', ['ngRoute', 'LocalStorageModule', 'angular-loading-bar']);
+﻿var app = angular.module('AngularAuthApp', ['ngRoute', 'LocalStorageModule', 'chieffancypants.loadingBar', 'ngResource']);
 
 app.config(function ($routeProvider) {
     $routeProvider.when("/home", {
